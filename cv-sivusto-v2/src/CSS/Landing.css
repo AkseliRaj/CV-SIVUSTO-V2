@@ -1,8 +1,35 @@
+.landing-heading {
+  font-size: 6rem;
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+
+/* Responsiivinen fonttikoko */
+@media (max-width: 992px) {
+  .landing-heading {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .landing-heading {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .landing-heading {
+    font-size: 3rem;
+  }
+}
+
 /* Animoitu gradient-tausta */
 .landing-background {
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background: linear-gradient(-45deg, #333399, #7B21AB, #B213B9, #FF00CC);
   background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  animation: gradient 8s ease infinite;
 }
 
 @keyframes gradient {
@@ -22,7 +49,7 @@
   position: relative;
   background-color: white;
   border: none;
-  padding: 0.75rem 2rem;
+  padding: 0.75rem 1rem;
   font-size: 1.5rem;
   font-family: 'League Spartan', sans-serif;
   font-weight: bold;
@@ -44,9 +71,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background: linear-gradient(45deg, #1e1e5a, #7B21AB, #7c13b9, #FF00CC);
   background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  animation: gradient 8s ease infinite;
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -61,4 +88,26 @@
 /* Hover: tausta hieman tummemmaksi */
 .gradient-text-button:hover {
   background-color: #f0f0f0;
+}
+
+@media (max-width: 576px) {
+  .gradient-text-button {
+    font-size: 1.1rem;
+    min-width: 180px;
+    min-height: 45px;
+    padding: 0.4rem 1rem;
+  }
+
+  .gradient-text-button::before {
+    font-size: inherit;
+  }
+}
+
+@media (max-width: 400px) {
+  .gradient-text-button {
+    font-size: 1rem;
+    min-width: 160px;
+    min-height: 40px;
+    padding: 0.3rem 0.8rem;
+  }
 }
