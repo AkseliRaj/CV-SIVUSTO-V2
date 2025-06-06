@@ -1,35 +1,41 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import '../CSS/Navigation.css';
 
 function Navigation() {
   const [open, setOpen] = useState(false);
-  const navigate = useNavigate();
-
-  const toggleMenu = () => setOpen(!open);
   const closeMenu = () => setOpen(false);
 
   return (
     <>
-      {/* Header bar */}
       <nav className="top-bar">
-        <button className="hamburger" onClick={toggleMenu}>
-          ☰
-        </button>
-        <button className="contact-link" onClick={() => {
-          const section = document.getElementById('contact');
-          if (section) section.scrollIntoView({ behavior: 'smooth' });
-        }}>
+        <button className="hamburger" onClick={() => setOpen(!open)}>☰</button>
+        <button
+          className="contact-link"
+          onClick={() => {
+            const section = document.getElementById('contact');
+            if (section) section.scrollIntoView({ behavior: 'smooth' });
+          }}
+        >
           Ota yhteyttä
         </button>
       </nav>
 
-      {/* Slide-in menu */}
       <div className={`side-nav ${open ? 'open' : ''}`}>
         <button className="close-btn" onClick={closeMenu}>×</button>
         <ul>
-          <li><button onClick={() => { navigate('/projects'); closeMenu(); }}>Projektit</button></li>
-          <li><a href="https://github.com/kayttajatunnus" target="_blank" rel="noreferrer">GitHub-profiili</a></li>
+          <li><Link to="/home" onClick={closeMenu}>Etusivu</Link></li>
+          <li><Link to="/projects" onClick={closeMenu}>Portfolio</Link></li>
+          <li>
+            <a
+              href="https://github.com/AkseliRaj"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={closeMenu}
+            >
+              GitHub
+            </a>
+          </li>
         </ul>
       </div>
     </>

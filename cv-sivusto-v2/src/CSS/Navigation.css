@@ -56,9 +56,10 @@
   font-size: 2rem;
   background: none;
   border: none;
-  color: #242424;     /* ← X myös tummanharmaa */
-  align-self: flex-start; /* ← nyt vasemmalla */
+  color: #242424;   
+  align-self: flex-start; 
   cursor: pointer;
+  margin-left: 1rem;
 }
 
 
@@ -66,6 +67,7 @@
   list-style: none;
   padding: 0;
   margin-top: 2rem;
+  margin-left: 1rem;
 }
 
 .side-nav li {
@@ -73,13 +75,17 @@
 }
 
 .side-nav a,
-.side-nav button {
+.side-nav button,
+.side-nav .nav-link {
   color: #242424;
   background: none;
   border: none;
   font-size: 1rem;
-  text-align: left;
   font-family: 'Montserrat', sans-serif;
   cursor: pointer;
+  text-decoration: none; /* 🔥 Tämä poistaa alaviivan */
+  display: block;
+  padding: 0.5rem 0;
 }
+
 
