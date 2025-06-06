@@ -1,13 +1,18 @@
+/* Google Fonts - oletuksena Montserrat keholle */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Otsikot ja napit käyttävät League Spartania */
+h1, h2, h3, h4, h5, h6,
+button, .btn {
+  font-family: 'League Spartan', sans-serif;
+}
+
+/* Koodiblokit edelleen monospace-fontilla */
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Courier New', monospace;
 }
