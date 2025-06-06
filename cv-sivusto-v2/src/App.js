@@ -1,15 +1,10 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link,
-  useLocation
-} from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 
 import Landing from "./sites/Landing";
 import Home from "./sites/Home";
 import Projects from "./sites/Projects";
+import Navigation from "./components/Navigation";
 
 function App() {
   const location = useLocation();
@@ -17,21 +12,7 @@ function App() {
 
   return (
     <div className="container-fluid p-0 m-0">
-      {!isLanding && (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light mb-4">
-          <ul className="navbar-nav px-3">
-            <li className="nav-item">
-              <Link className="nav-link" to="/">Landing</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/home">Home</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/projects">Projects</Link>
-            </li>
-          </ul>
-        </nav>
-      )}
+      {!isLanding && <Navigation />}
 
       <Routes>
         <Route path="/" element={<Landing />} />
