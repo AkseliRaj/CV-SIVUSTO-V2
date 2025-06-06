@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import '../CSS/Navigation.css';
+
+import { ReactComponent as HamburgerIcon } from '../assets/icons/HamburgerMenuIcon.svg';
+import { ReactComponent as CloseIcon } from '../assets/icons/CloseButtonIcon.svg';
 
 function Navigation() {
   const [open, setOpen] = useState(false);
@@ -8,8 +11,11 @@ function Navigation() {
 
   return (
     <>
+      {/* Yläpalkki */}
       <nav className="top-bar">
-        <button className="hamburger" onClick={() => setOpen(!open)}>☰</button>
+        <button className="hamburger" onClick={() => setOpen(!open)} aria-label="Avaa valikko">
+          <HamburgerIcon className="icon" />
+        </button>
         <button
           className="contact-link"
           onClick={() => {
@@ -21,8 +27,11 @@ function Navigation() {
         </button>
       </nav>
 
+      {/* Sivupalkki */}
       <div className={`side-nav ${open ? 'open' : ''}`}>
-        <button className="close-btn" onClick={closeMenu}>×</button>
+        <button className="close-btn" onClick={closeMenu} aria-label="Sulje valikko">
+          <CloseIcon className="icon" />
+        </button>
         <ul>
           <li><Link to="/home" onClick={closeMenu}>Etusivu</Link></li>
           <li><Link to="/projects" onClick={closeMenu}>Portfolio</Link></li>

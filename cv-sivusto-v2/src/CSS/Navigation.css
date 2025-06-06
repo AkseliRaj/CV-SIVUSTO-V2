@@ -12,6 +12,13 @@
   z-index: 100;
 }
 
+.icon {
+  width: 24px;
+  height: 24px;
+  fill: #242424;
+}
+
+
 /* Hampurilaisnappi */
 .hamburger {
   font-size: 2rem;
