@@ -1,0 +1,32 @@
+/* Oletustekstit koko sivustolle */
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #FFFFFF;
+  background-color: #242424;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Otsikot */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* Leipätekstit (esim. p) */
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+/* Pienet selventävät kuvaukset tai sivutekstit */
+.small-text {
+  font-size: 0.9rem;
+  color: #cccccc;
+  font-style: italic;
+  font-weight: 300;
+}
