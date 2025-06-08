@@ -10,7 +10,7 @@ function HighlightSection() {
         Olen hyvä<br></br>{' '}
         <span className="typewriter-text">
           <Typewriter
-            words={['yliajattelemaan', 'stressaamaan', 'loivertelemaan', 'web-suunnittelussa']}
+            words={['Web-kehityksessä', 'UI/UX-suunnittelussa', 'pelikehityksessä', 'pelisuunnittelussa', 'mobiilikehityksessä', 'kahvin keittämisessä']}
             loop={0}
             cursor
             cursorStyle="_"
