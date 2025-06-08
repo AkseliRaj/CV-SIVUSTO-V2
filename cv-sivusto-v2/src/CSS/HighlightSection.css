@@ -1,0 +1,31 @@
+.highlight-wrapper {
+  color: #ffffff;
+    margin-bottom: 8rem;
+    margin-top: 5rem;
+}
+
+.highlight-heading {
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 700;
+  font-size: 7rem;
+  line-height: 1.3;
+}
+
+.typewriter-text {
+  color: #ffffff;
+}
+
+.highlight-subtext {
+  font-family: 'Montserrat', sans-serif;
+  font-size:1.7rem;
+}
+
+.highlight-link {
+  color: #e600c9;
+  text-decoration: underline;
+}
+
+.highlight-link:hover {
+  text-decoration: none;
+  color: #ff69e0;
+}

@@ -1,10 +1,13 @@
 import React from 'react';
 import '../CSS/Home.css';
+import HighlightSection from '../components/HighlightSection.js';
+
 import reactIcon from '../assets/icons/react.svg';
 import jsIcon from '../assets/icons/js.svg';
 import wpIcon from '../assets/icons/wordpress.svg';
 import psIcon from '../assets/icons/photoshop.svg';
 import prIcon from '../assets/icons/premiere.svg';
+
 
 function Home() {
   return (
@@ -19,7 +22,7 @@ function Home() {
         </p>
       </div>
 
-      <div className="skills-section mt-5">
+      <div className="skills-section">
         <p className="subtext mb-4">Pätevyydet alan tehtäviin:</p>
         <div className="skills-grid">
           <div className="skill-badge">
@@ -44,7 +47,7 @@ function Home() {
           </div>
         </div>
       </div>
-
+      <HighlightSection />
     </div>
   );
 }
