@@ -32,12 +32,23 @@
   align-items: center;
   gap: 0.5rem;
   padding: 0.6rem 1.4rem;
-  border: 2px solid;
-  border-image: linear-gradient(45deg, #d92cf9, #712bff) 1;
+
+  border: 2px solid transparent; /* 🔧 Tärkeä muutos */
   border-radius: 71px;
+
+  background-image: linear-gradient(#242424, #242424),  /* tausta */
+                    linear-gradient(45deg, #d92cf9, #712bff); /* reunagradient */
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
   color: #ffffff;
+  transition: transform 0.2s ease-in-out;
+}
+
+.skill-badge:hover {
+  transform: scale(1.05);
 }
 
 .skill-badge img {
