@@ -1,0 +1,47 @@
+.home-wrapper {
+  color: #ffffff;
+}
+
+.header-section {
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+
+.header-name {
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 700;
+  font-size: 7rem;
+  display: inline-block;
+}
+
+.subtext {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size:1.7rem;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  margin-top: 1rem;
+}
+
+.skill-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.4rem;
+  border: 2px solid;
+  border-image: linear-gradient(45deg, #d92cf9, #712bff) 1;
+  border-radius: 71px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.skill-badge img {
+  width: 24px;
+  height: 24px;
+  filter: invert(100%);
+}

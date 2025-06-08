@@ -27,7 +27,7 @@
 
 /* Animoitu gradient-tausta */
 .landing-background {
-  background: linear-gradient(-45deg, #333399, #7B21AB, #B213B9, #FF00CC);
+  background: linear-gradient(-45deg, #10f64d, #4D55CC, #7A73D1, #B5A8D5);
   background-size: 400% 400%;
   animation: gradient 8s ease infinite;
 }
@@ -71,7 +71,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: linear-gradient(45deg, #1e1e5a, #7B21AB, #7c13b9, #FF00CC);
+  background: linear-gradient(45deg, #211C84, #4D55CC, #7A73D1, #B5A8D5);
   background-size: 400% 400%;
   animation: gradient 8s ease infinite;
 
