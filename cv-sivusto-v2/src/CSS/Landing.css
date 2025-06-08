@@ -111,3 +111,38 @@
     padding: 0.3rem 0.8rem;
   }
 }
+
+.landing-background {
+  position: relative;
+  background: linear-gradient(-45deg, #10f64d, #4D55CC, #7A73D1, #B5A8D5);
+  background-size: 400% 400%;
+  animation: gradient 8s ease infinite;
+  overflow: hidden;
+}
+
+.landing-background::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #242424;
+  opacity: 0;
+  transition: opacity 1s ease;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.landing-background.fade-out::after {
+  opacity: 1;
+}
+
+.landing-heading.fade,
+.gradient-text-button.fade {
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.landing-heading,
+.gradient-text-button {
+  z-index: 2;
+  position: relative;
+}
