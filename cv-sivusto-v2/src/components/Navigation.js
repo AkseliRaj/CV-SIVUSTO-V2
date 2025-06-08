@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../CSS/Navigation.css';
 
@@ -7,12 +7,19 @@ import { ReactComponent as CloseIcon } from '../assets/icons/CloseButtonIcon.svg
 
 function Navigation() {
   const [open, setOpen] = useState(false);
+  const [fadeIn, setFadeIn] = useState(false);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => setFadeIn(true), 100); // pieni viive antaa luonnollisen vaikutelman
+    return () => clearTimeout(timeout);
+  }, []);
+
   const closeMenu = () => setOpen(false);
 
   return (
     <>
       {/* Yläpalkki */}
-      <nav className="top-bar">
+      <nav className={`top-bar ${fadeIn ? 'fade-in' : ''}`}>
         <button className="hamburger" onClick={() => setOpen(!open)} aria-label="Avaa valikko">
           <HamburgerIcon className="icon" />
         </button>
