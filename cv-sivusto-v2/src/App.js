@@ -5,6 +5,7 @@ import Landing from "./sites/Landing";
 import Home from "./sites/Home";
 import Projects from "./sites/Projects";
 import Navigation from "./components/Navigation";
+import FooterMarquee from "./components/FooterMarquee.js";
 
 function App() {
   const location = useLocation();
@@ -19,6 +20,8 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
       </Routes>
+
+      {!isLanding && <FooterMarquee />}
     </div>
   );
 }

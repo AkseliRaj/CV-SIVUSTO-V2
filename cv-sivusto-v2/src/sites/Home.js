@@ -1,6 +1,8 @@
 import React from 'react';
 import '../CSS/Home.css';
+
 import HighlightSection from '../components/HighlightSection.js';
+import ContactForm from '../components/contactForm';
 
 import reactIcon from '../assets/icons/react.svg';
 import jsIcon from '../assets/icons/js.svg';
@@ -47,7 +49,17 @@ function Home() {
           </div>
         </div>
       </div>
-      <HighlightSection />
+
+      <div>
+        <HighlightSection />
+      </div>
+
+      <div id="contact" className='contactForm'>
+        <h2 className="header-name">Yhteydenotot</h2>
+        <p className="subtext mb-4">akseli.rajahalme@gmail.com<br />+358 44 993 7101</p>
+        <ContactForm />
+      </div>
+
     </div>
   );
 }

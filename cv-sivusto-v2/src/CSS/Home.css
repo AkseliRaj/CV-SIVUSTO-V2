@@ -9,9 +9,7 @@
   display: inline-block;
 }
 
-
-
-.skills-section, .header-section {
+.skills-section, .header-section, .contactForm {
     margin-bottom: 8rem;
     margin-top: 5rem;
 }

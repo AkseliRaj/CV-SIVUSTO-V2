@@ -1,0 +1,38 @@
+.footer-marquee {
+  background-color: #242424; /* huom: hex puuttui # merkki! */
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+}
+
+.marquee-track {
+  display: inline-flex;
+  animation: scroll 120s linear infinite;
+  white-space: nowrap;
+  transition: animation-duration 0.5s ease;
+}
+
+.footer-marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+.marquee-track span {
+  display: inline-block;
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: #fff;
+  padding-right: 2rem;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

@@ -1,0 +1,39 @@
+form {
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+}
+
+label {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-control {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+}
+
+textarea.form-control {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.btn {
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 700;
+  border-radius: 12px;
+  padding: 0.5rem 1.5rem;
+  background-color: #ffffff;
+  color: #242424;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e6e6e6;
+  color: #242424;
+}
