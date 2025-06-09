@@ -12,7 +12,10 @@ function App() {
   const isLanding = location.pathname === "/";
 
   return (
-    <div className="container-fluid p-0 m-0">
+    <div className="app-wrapper position-relative">
+      {/* Dot background */}
+      <div className="grid-background" aria-hidden="true"></div>
+
       {!isLanding && <Navigation />}
 
       <Routes>

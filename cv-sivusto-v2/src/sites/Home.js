@@ -10,6 +10,9 @@ import jsIcon from '../assets/icons/js.svg';
 import wpIcon from '../assets/icons/wordpress.svg';
 import psIcon from '../assets/icons/photoshop.svg';
 import prIcon from '../assets/icons/premiere.svg';
+import cssIcon from '../assets/icons/css.svg';
+import htmlIcon from '../assets/icons/html5.svg';
+import basedIcon from '../assets/icons/location.svg';
 
 
 function Home() {
@@ -29,9 +32,15 @@ function Home() {
         <h1 className="header-name">
           Akseli Rajahalme <span className="asterisk">*</span>
         </h1>
-        <p className="fst-italic subtext">
-          Web developer / UI, UX Designer
-        </p>
+
+        <div className="location">
+          <img src={basedIcon} alt="Location" />
+          <span>Web developer / UI, UX Designer</span>
+        </div>
+        <div className="location">
+          <img src={basedIcon} alt="Location" />
+          <span>Helsinki, Finland</span>
+        </div>
       </div>
 
       <div
@@ -59,6 +68,14 @@ function Home() {
           <div className="skill-badge">
             <img src={prIcon} alt="Premiere Pro" />
             <span>Premiere Pro</span>
+          </div>
+          <div className="skill-badge">
+            <img src={cssIcon} alt="CSS" />
+            <span>CSS</span>
+          </div>
+          <div className="skill-badge">
+            <img src={htmlIcon} alt="HTML5" />
+            <span>HTML5</span>
           </div>
         </div>
       </div>

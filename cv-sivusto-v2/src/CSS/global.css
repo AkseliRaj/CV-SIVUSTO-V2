@@ -30,3 +30,16 @@ p {
   font-style: italic;
   font-weight: 300;
 }
+
+.grid-background {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-color: #242424;
+  background-image: 
+    linear-gradient(to right, rgba(240, 240, 240, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(240, 240, 240, 0.05) 1px, transparent 1px);
+  background-size: 6rem 4rem;
+  pointer-events: none;
+}
+
