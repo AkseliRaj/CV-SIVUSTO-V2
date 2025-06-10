@@ -33,7 +33,7 @@ const ContactForm = () => {
     <div>
       <form onSubmit={handleSubmit}>
         <div className="form-group pb-4">
-          <label htmlFor="name">Organisaation nimi</label>
+          <label htmlFor="name">Organisaation nimi:</label>
           <input
             type="text"
             className="form-control grey-textarea"

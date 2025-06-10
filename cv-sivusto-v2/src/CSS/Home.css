@@ -9,19 +9,23 @@
   display: inline-block;
 }
 
-.location{
-
+.location img, .briefcase img {
+  margin-right: 2vh;
 }
 
-.skills-section, .header-section, .contactForm, .location {
+.location, .briefcase {
+  margin-top: 1.5vh;
+}
+
+.skills-section, .header-section, .contactForm {
     margin-bottom: 8rem;
     margin-top: 5rem;
 }
 
-.subtext, .location{
+.subtext, .location, .briefcase{
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  font-size:1.7rem;
+  font-size:2rem;
 }
 
 .skills-grid {
@@ -56,7 +60,7 @@
   transform: scale(1.05);
 }
 
-.skill-badge img, .location img {
+.skill-badge img, .location img, .briefcase img {
   width: 40px;
   height: 40px;
   filter: invert(100%);

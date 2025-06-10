@@ -13,6 +13,7 @@ import prIcon from '../assets/icons/premiere.svg';
 import cssIcon from '../assets/icons/css.svg';
 import htmlIcon from '../assets/icons/html5.svg';
 import basedIcon from '../assets/icons/location.svg';
+import briefcaseIcon from '../assets/icons/briefcase.svg'
 
 
 function Home() {
@@ -33,8 +34,8 @@ function Home() {
           Akseli Rajahalme <span className="asterisk">*</span>
         </h1>
 
-        <div className="location">
-          <img src={basedIcon} alt="Location" />
+        <div className="briefcase">
+          <img src={briefcaseIcon} alt="Briefcase" />
           <span>Web developer / UI, UX Designer</span>
         </div>
         <div className="location">
