@@ -5,12 +5,15 @@ import '../CSS/Navigation.css';
 import { ReactComponent as HamburgerIcon } from '../assets/icons/HamburgerMenuIcon.svg';
 import { ReactComponent as CloseIcon } from '../assets/icons/CloseButtonIcon.svg';
 
+import instagramIcon from '../assets/icons/instagram.svg';
+import githubIcon from '../assets/icons/github.svg';
+
 function Navigation() {
   const [open, setOpen] = useState(false);
   const [fadeIn, setFadeIn] = useState(false);
 
   useEffect(() => {
-    const timeout = setTimeout(() => setFadeIn(true), 100); // pieni viive antaa luonnollisen vaikutelman
+    const timeout = setTimeout(() => setFadeIn(true), 100);
     return () => clearTimeout(timeout);
   }, []);
 
@@ -44,16 +47,28 @@ function Navigation() {
           <li><Link to="/projects" onClick={closeMenu}>Portfolio</Link></li>
           <li>
             <a
-              href="https://github.com/AkseliRaj"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/path/to/your-cv.pdf"
+              download="AkseliRaj_CV.pdf"
               onClick={closeMenu}
             >
-              GitHub
+              Ansioluettelo
             </a>
           </li>
         </ul>
+
+        {/* Sosiaalisen median ikonit */}
+        <div className="social-icons">
+          <a href="https://github.com/AkseliRaj" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>
+            <img src={githubIcon} alt="Github" className="social-icon" />
+          </a>
+          <a href="https://instagram.com/yourusername" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>
+            <img src={instagramIcon} alt="Instagram" className="social-icon" />
+          </a>
+        </div>
       </div>
+
+      {/* Tumma overlay, näkyy vain kun valikko on auki */}
+      {open && <div className="overlay" onClick={closeMenu}></div>}
     </>
   );
 }

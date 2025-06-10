@@ -41,12 +41,12 @@
 .side-nav {
   position: fixed;
   top: 0;
-  left: -250px;
-  width: 250px;
+  width: 520px;
+  left: -520px;
   height: 100vh;
   background-color: #ffffff; 
   color: #242424;
-  padding: 2rem 1rem;
+  padding: 2rem 2rem;
   transition: left 0.3s ease;
   z-index: 200;
   display: flex;
@@ -87,12 +87,42 @@
   color: #242424;
   background: none;
   border: none;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-family: 'Montserrat', sans-serif;
   cursor: pointer;
-  text-decoration: none; /* 🔥 Tämä poistaa alaviivan */
+  text-decoration: none;
   display: block;
   padding: 0.5rem 0;
+}
+
+.social-icons {
+  margin-top: auto; /* Työntää ikonit alareunaan */
+  display: flex;
+  gap: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* puoliläpinäkyvä musta */
+  z-index: 150; /* alle sivupalkin (200), mutta yli muun sisällön */
+  cursor: pointer;
 }
 
 

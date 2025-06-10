@@ -12,6 +12,7 @@ import psIcon from '../assets/icons/photoshop.svg';
 import prIcon from '../assets/icons/premiere.svg';
 import cssIcon from '../assets/icons/css.svg';
 import htmlIcon from '../assets/icons/html5.svg';
+
 import basedIcon from '../assets/icons/location.svg';
 import briefcaseIcon from '../assets/icons/briefcase.svg'
 
