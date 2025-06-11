@@ -5,12 +5,18 @@ import '../CSS/HighlightSection.css';
 
 function HighlightSection() {
   return (
-    <div className="highlight-wrapper container mt-5">
+    <div className="highlight-wrapper mt-5">
       <h2 className="highlight-heading">
         Olen hyvä<br></br>{' '}
         <span className="typewriter-text">
           <Typewriter
-            words={['Web-kehityksessä', 'UI/UX-suunnittelussa', 'pelikehityksessä', 'pelisuunnittelussa', 'mobiilikehityksessä', 'kahvin keittämisessä']}
+            words={[
+              'ohjelmoinnissa',
+              'web-kehityksessä',
+              'pelikehityksessä',
+              'UI-suunnittelussa',
+              'minecraftissa',
+            ]}
             loop={0}
             cursor
             cursorStyle="_"

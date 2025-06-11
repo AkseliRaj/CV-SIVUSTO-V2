@@ -6,7 +6,7 @@ form {
 
 label {
   font-weight: 400;
-  font-size:2rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
@@ -39,4 +39,59 @@ textarea.form-control {
 .btn:hover {
   background-color: #e6e6e6;
   color: #242424;
+}
+
+/*Label text*/
+@media (max-width: 992px) {
+  label {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 580px) {
+  label {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 400px) {
+  label {
+    font-size: 1rem;
+    margin-bottom: .5rem;
+  }
+}
+
+/*Form control*/
+@media (max-width: 992px) {
+  .form-control {
+    font-size: 1rem;
+    padding: .5rem;
+    margin-bottom: 1rem;
+    width: 90%;
+  }
+}
+
+@media (max-width: 580px) {
+  .form-control {
+    font-size: 1rem;
+    padding: .5rem;
+    margin-bottom: 1rem;
+    width: 80%;
+  }
+}
+
+@media (max-width: 400px) {
+  .form-control {
+    border-radius: 10px;
+    padding: .3rem;
+    margin-bottom: .5rem;
+  }
+}
+
+/*Button*/
+@media (max-width: 400px) {
+  .btn {
+    font-size: 1rem;
+    padding: .4rem 1.5rem;
+  }
 }

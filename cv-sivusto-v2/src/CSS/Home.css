@@ -1,90 +1,250 @@
 .home-wrapper {
-  color: #ffffff;
+  color: #ffffff; /* Sets the default text color to white */
 }
 
+/* Styling for the main name header */
 .header-name {
-  font-family: 'League Spartan', sans-serif;
+  font-family: 'League Spartan', sans-serif; 
   font-weight: 700;
-  font-size: 7rem;
-  display: inline-block;
+  font-size: 7rem; 
+  display: inline-block; /* Allows for inline-block behavior */
+  line-height: 100%; /* Line height equal to font size */
 }
 
-.location img, .briefcase img {
+/* Spacing for images within location and briefcase sections of heading subtext */
+.location img,
+.briefcase img {
   margin-right: 2vh;
 }
 
-.location, .briefcase {
-  margin-top: 1.5vh;
+/* Top margin for location and briefcase sections */
+.location,
+.briefcase {
+  margin-top: 1.5vh; 
 }
 
-.skills-section, .header-section, .contactForm {
-    margin-bottom: 8rem;
-    margin-top: 5rem;
+/* Bottom and top margins for main sections like skills, header, and contact form */
+.skills-section,
+.header-section,
+.contactForm {
+  margin-bottom: 8rem; 
+  margin-top: 5rem; 
 }
 
-.subtext, .location, .briefcase{
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size:2rem;
+/* Styling for various subtext elements, including occupation and location text */
+.subtext,
+.location span,
+.briefcase span {
+  font-family: 'Montserrat', sans-serif; /* Custom font family */
+  font-weight: 400; /* Regular font weight */
+  font-size: 2rem; /* Font size for subtext */
 }
 
+/* Layout for the skills grid */
 .skills-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem 2rem;
-  margin-top: 1rem;
+  display: flex; /* Uses flexbox for layout */
+  flex-wrap: wrap; /* Allows items to wrap to the next line */
+  gap: 1rem 2rem; /* Spacing between grid items (row-gap column-gap) */
+  margin-top: 1rem; /* Top margin for the grid */
 }
 
+/* Styling for individual skill badges */
 .skill-badge {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: .5rem 1.8rem;
-  margin-bottom: 7px;
-
-  border: 2px solid transparent; /* 🔧 Tärkeä muutos */
-  border-radius: 71px;
-
-  background-image: linear-gradient(#242424, #242424),  /* tausta */
-                    linear-gradient(45deg, #d92cf9, #712bff); /* reunagradient */
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
-
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2rem;
-  color: #ffffff;
-  transition: transform 0.2s ease-in-out;
+  display: flex; /* Uses flexbox for icon and text alignment */
+  align-items: center; /* Vertically aligns items in the center */
+  gap: 1rem; /* Spacing between icon and text */
+  padding: .5rem 1.8rem; /* Padding inside the badge */
+  margin-bottom: 7px; /* Small bottom margin for spacing */
+  border: 2px solid transparent; /* Transparent border for gradient effect */
+  border-radius: 71px; /* Highly rounded corners for a "badge" look */
+  /* Creates a gradient border effect */
+  background-image: linear-gradient(#242424, #242424),
+    linear-gradient(45deg, #d92cf9, #712bff);
+  background-origin: border-box; /* Origin of the background */
+  background-clip: padding-box, border-box; /* Clips background to padding box and border box */
+  font-family: 'Montserrat', sans-serif; /* Custom font family */
+  font-size: 2rem; /* Font size for skill text */
+  color: #ffffff; /* Text color */
+  transition: transform 0.2s ease-in-out; /* Smooth transition for hover effect */
 }
 
+/* Hover effect for skill badges */
 .skill-badge:hover {
-  transform: scale(1.05);
+  transform: scale(1.05); /* Slightly enlarges the badge on hover */
 }
 
-.skill-badge img, .location img, .briefcase img {
-  width: 40px;
-  height: 40px;
-  filter: invert(100%);
+/* Styling for images within skill badges, location, and briefcase sections */
+.skill-badge img,
+.location img,
+.briefcase img {
+  width: 40px; /* Fixed width for icons */
+  height: 40px; /* Fixed height for icons */
+  filter: invert(100%); /* Inverts colors, making black icons white */
 }
 
+/* Styles for elements that will fade in on scroll */
 .fade-in-section {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 1.5s ease-out;
-  will-change: opacity, transform;
+  opacity: 0; /* Initially hidden */
+  transform: translateY(30px); /* Starts slightly below its final position */
+  transition: all 1.5s ease-out; /* Smooth transition for all animated properties */
+  will-change: opacity, transform; /* Optimizes rendering performance */
 }
 
+/* When the fade-in section becomes visible */
 .fade-in-section.visible {
-  opacity: 1;
-  transform: translateY(0);
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Moves to its original position */
 }
 
+/* Styles for a top bar (likely for navigation or similar, but not present in JS) */
 .top-bar {
-  opacity: 0;
-  transform: translateY(-20px);
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  opacity: 0; /* Initially hidden */
+  transform: translateY(-20px); /* Starts slightly above its final position */
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Smooth transition */
 }
 
+/* When the top bar fades in */
 .top-bar.fade-in {
-  opacity: 1;
-  transform: translateY(0);
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Moves to its original position */
+}
+
+/* --- Responsive Styles (Media Queries) --- */
+
+/* Header font size for medium screens (up to 992px) */
+@media (max-width: 992px) {
+  .header-name,
+  .highlight-heading {
+    font-size: 5rem; /* Smaller font size */
+  }
+}
+
+/* Header font size for small screens (up to 580px) */
+@media (max-width: 580px) {
+  .header-name,
+  .highlight-heading {
+    font-size: 4rem; /* Even smaller font size */
+  }
+}
+
+/* Header font size for extra small screens (up to 400px) */
+@media (max-width: 400px) {
+  .header-name,
+  .highlight-heading {
+    font-size: 2.8rem; /* Smallest font size */
+  }
+}
+
+/* Subtext (Occupation, location, and general subtext) font size for medium screens */
+@media (max-width: 992px) {
+  .briefcase span,
+  .location span,
+  .subtext,
+  .skill-badge span {
+    font-size: 1.7rem; /* Smaller font size */
+  }
+}
+
+/* Subtext font size for small screens */
+@media (max-width: 580px) {
+  .briefcase span,
+  .location span,
+  .subtext,
+  .skill-badge span {
+    font-size: 1.3rem; /* Even smaller font size */
+  }
+}
+
+/* Subtext font size for extra small screens */
+@media (max-width: 400px) {
+  .briefcase span,
+  .location span,
+  .subtext,
+  .skill-badge span {
+    font-size: 1rem; /* Smallest font size */
+  }
+}
+
+/* Specific styling for the "UI, UX Designer" text on small screens (up to 767px) */
+@media (max-width: 767px) {
+  .subtextUI {
+    margin-left: 60px; /* Adds left margin to indent this line */
+  }
+}
+
+@media (max-width: 580px) {
+  .subtextUI {
+    margin-left: 30px; /* Adjusts left margin for smaller screens */
+  }
+}
+
+/* Skills section and contact form margins for small screens */
+@media (max-width: 580px) {
+  .skills-section,
+  .contactForm,
+  .header-section {
+    margin-left: 1.2rem; /* Left margin adjustment */
+    margin-top: 0rem; /* Removes top margin */
+    margin-bottom: 3.5rem; /* Adjusts bottom margin */
+  }
+}
+
+@media (max-width: 580px) {
+  .skills-section,
+  .contactForm,
+  .header-section {
+    margin-left: 1.2rem; /* Left margin adjustment */
+    margin-top: 0rem; /* Removes top margin */
+    margin-bottom: 3.5rem; /* Adjusts bottom margin */
+  }
+}
+
+/* Skills section margins for extra small screens */
+@media (max-width: 400px) {
+  .skills-section,
+  .contactForm,
+  .header-section {
+    margin-left: 1rem; /* Further left margin adjustment */
+  }
+}
+
+/* Occupation and location icon size and margin for small screens */
+@media (max-width: 580px) {
+  .location img,
+  .briefcase img {
+    margin-right: .5rem; /* Right margin adjustment */
+    width: 20px; /* Smaller icon width */
+    height: 20px; /* Smaller icon height */
+  }
+}
+
+/* Occupation and location icon size and margin for extra small screens */
+@media (max-width: 400px) {
+  .location img,
+  .briefcase img {
+    margin-right: .5rem; /* Consistent right margin */
+  }
+}
+
+/* Skill badge icon size for small screens */
+@media (max-width: 580px) {
+  .skill-badge img {
+    width: 20px; /* Smaller icon width */
+    height: 20px; /* Smaller icon height */
+  }
+}
+
+/* Skill badge grid gap for small screens */
+@media (max-width: 580px) {
+  .skills-grid {
+    gap: 0.8rem .5rem; /* Reduced gap between skill badges */
+  }
+}
+
+/* Skill badge padding and font size for small screens */
+@media (max-width: 580px) {
+  .skill-badge {
+    gap: .5rem; /* Reduced gap */
+    padding: .5rem 1rem; /* Adjusted padding */
+  }
 }

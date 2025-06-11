@@ -61,7 +61,7 @@ function Navigation() {
           <a href="https://github.com/AkseliRaj" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>
             <img src={githubIcon} alt="Github" className="social-icon" />
           </a>
-          <a href="https://instagram.com/yourusername" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>
+          <a href="https://www.instagram.com/askeli.png/" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>
             <img src={instagramIcon} alt="Instagram" className="social-icon" />
           </a>
         </div>
