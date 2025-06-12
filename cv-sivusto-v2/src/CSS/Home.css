@@ -1,14 +1,19 @@
-.home-wrapper {
-  color: #ffffff; /* Sets the default text color to white */
-}
-
 /* Styling for the main name header */
 .header-name {
   font-family: 'League Spartan', sans-serif; 
   font-weight: 700;
   font-size: 7rem; 
-  display: inline-block; /* Allows for inline-block behavior */
-  line-height: 100%; /* Line height equal to font size */
+  display: inline-block;
+  line-height: 100%;
+}
+
+/* Styling for various subtext elements, including occupation and location text */
+.subtext,
+.location span,
+.briefcase span {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
 }
 
 /* Spacing for images within location and briefcase sections of heading subtext */
@@ -31,54 +36,43 @@
   margin-top: 5rem; 
 }
 
-/* Styling for various subtext elements, including occupation and location text */
-.subtext,
-.location span,
-.briefcase span {
-  font-family: 'Montserrat', sans-serif; /* Custom font family */
-  font-weight: 400; /* Regular font weight */
-  font-size: 2rem; /* Font size for subtext */
-}
-
 /* Layout for the skills grid */
 .skills-grid {
-  display: flex; /* Uses flexbox for layout */
-  flex-wrap: wrap; /* Allows items to wrap to the next line */
-  gap: 1rem 2rem; /* Spacing between grid items (row-gap column-gap) */
-  margin-top: 1rem; /* Top margin for the grid */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
 }
 
 /* Styling for individual skill badges */
 .skill-badge {
-  display: flex; /* Uses flexbox for icon and text alignment */
-  align-items: center; /* Vertically aligns items in the center */
-  gap: 1rem; /* Spacing between icon and text */
-  padding: .5rem 1.8rem; /* Padding inside the badge */
-  margin-bottom: 7px; /* Small bottom margin for spacing */
-  border: 2px solid transparent; /* Transparent border for gradient effect */
-  border-radius: 71px; /* Highly rounded corners for a "badge" look */
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: .5rem 1.8rem;
+  margin-bottom: 7px;
+  border: 2px solid transparent;
+  border-radius: 71px;
+  
   /* Creates a gradient border effect */
   background-image: linear-gradient(#242424, #242424),
     linear-gradient(45deg, #d92cf9, #712bff);
   background-origin: border-box; /* Origin of the background */
   background-clip: padding-box, border-box; /* Clips background to padding box and border box */
-  font-family: 'Montserrat', sans-serif; /* Custom font family */
-  font-size: 2rem; /* Font size for skill text */
-  color: #ffffff; /* Text color */
+  font-size: 2rem;
   transition: transform 0.2s ease-in-out; /* Smooth transition for hover effect */
 }
 
 /* Hover effect for skill badges */
 .skill-badge:hover {
-  transform: scale(1.05); /* Slightly enlarges the badge on hover */
+  transform: scale(1.05);
 }
 
 /* Styling for images within skill badges, location, and briefcase sections */
 .skill-badge img,
 .location img,
 .briefcase img {
-  width: 40px; /* Fixed width for icons */
-  height: 40px; /* Fixed height for icons */
+  width: 40px; 
+  height: 40px; 
   filter: invert(100%); /* Inverts colors, making black icons white */
 }
 
@@ -98,7 +92,7 @@
 
 /* Styles for a top bar (likely for navigation or similar, but not present in JS) */
 .top-bar {
-  opacity: 0; /* Initially hidden */
+  opacity: 0;
   transform: translateY(-20px); /* Starts slightly above its final position */
   transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Smooth transition */
 }
@@ -109,59 +103,53 @@
   transform: translateY(0); /* Moves to its original position */
 }
 
-/* --- Responsive Styles (Media Queries) --- */
-
-/* Header font size for medium screens (up to 992px) */
+/* Header font size*/
 @media (max-width: 992px) {
   .header-name,
   .highlight-heading {
-    font-size: 5rem; /* Smaller font size */
+    font-size: 5rem;
   }
 }
 
-/* Header font size for small screens (up to 580px) */
 @media (max-width: 580px) {
   .header-name,
   .highlight-heading {
-    font-size: 4rem; /* Even smaller font size */
+    font-size: 4rem;
   }
 }
 
-/* Header font size for extra small screens (up to 400px) */
 @media (max-width: 400px) {
   .header-name,
   .highlight-heading {
-    font-size: 2.8rem; /* Smallest font size */
+    font-size: 2.8rem;
   }
 }
 
-/* Subtext (Occupation, location, and general subtext) font size for medium screens */
+/* Subtext*/
 @media (max-width: 992px) {
   .briefcase span,
   .location span,
   .subtext,
   .skill-badge span {
-    font-size: 1.7rem; /* Smaller font size */
+    font-size: 1.7rem;
   }
 }
 
-/* Subtext font size for small screens */
 @media (max-width: 580px) {
   .briefcase span,
   .location span,
   .subtext,
   .skill-badge span {
-    font-size: 1.3rem; /* Even smaller font size */
+    font-size: 1.3rem;
   }
 }
 
-/* Subtext font size for extra small screens */
 @media (max-width: 400px) {
   .briefcase span,
   .location span,
   .subtext,
   .skill-badge span {
-    font-size: 1rem; /* Smallest font size */
+    font-size: 1rem;
   }
 }
 
@@ -182,8 +170,7 @@
 @media (max-width: 580px) {
   .skills-section,
   .contactForm,
-  .header-section {
-    margin-left: 1.2rem; /* Left margin adjustment */
+  .header-section {/* Left margin adjustment */
     margin-top: 0rem; /* Removes top margin */
     margin-bottom: 5rem; /* Adjusts bottom margin */
   }
@@ -194,7 +181,6 @@
   .skills-section,
   .contactForm,
   .header-section {
-    margin-left: 1rem;
     margin-bottom: 4rem; /* Further left margin adjustment */
   }
 }
@@ -203,43 +189,43 @@
 @media (max-width: 580px) {
   .location img,
   .briefcase img {
-    margin-right: .5rem; /* Right margin adjustment */
-    width: 20px; /* Smaller icon width */
-    height: 20px; /* Smaller icon height */
+    margin-right: .5rem;
+    width: 20px;
+    height: 20px;
   }
 }
 
-/* Occupation and location icon size and margin for extra small screens */
 @media (max-width: 400px) {
   .location img,
   .briefcase img {
-    margin-right: .5rem; /* Consistent right margin */
+    margin-right: .5rem;
   }
 }
 
-/* Skill badge icon size for small screens */
+/*Skill badge icon size*/
 @media (max-width: 580px) {
   .skill-badge img {
-    width: 20px; /* Smaller icon width */
-    height: 20px; /* Smaller icon height */
+    width: 20px;
+    height: 20px;
   }
 }
 
-/* Skill badge grid gap for small screens */
+/*Skill badge grid gap*/
 @media (max-width: 580px) {
   .skills-grid {
-    gap: 0.8rem .5rem; /* Reduced gap between skill badges */
+    gap: 0.8rem .5rem;
   }
 }
 
-/* Skill badge padding and font size for small screens */
+/*Skill badge padding and font size*/
 @media (max-width: 580px) {
   .skill-badge {
-    gap: .5rem; /* Reduced gap */
-    padding: .5rem 1rem; /* Adjusted padding */
+    gap: .5rem;
+    padding: .5rem 1rem;
   }
 }
 
+/**/
 @media (max-width: 992px) {
   .contactForm p {
     margin-bottom: 4rem !important;

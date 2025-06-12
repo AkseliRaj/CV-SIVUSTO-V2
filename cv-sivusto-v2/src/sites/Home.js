@@ -25,17 +25,17 @@ function Home() {
 
   return (
     <div className="container mt-5">
-      <div className="row">
+      <div className="row justify-content-center">
         {/* Tyhjää tilaa isoilla näytöillä */}
         <div className="d-none d-xl-block col-xl-1"></div>
         {/* Keskikolumni: padding kaikilla, tyhjä tila reunoilla vain xl-näytöillä */}
-        <div className="col-12 col-xl-11 px-3 px-sm-4 px-md-5">
+        <div className="col-12 col-xl-12 px-4 px-sxm px-sm-1 px-md-5">
           <div
             ref={headerRef}
             className={`header-section fade-in-section ${headerVisible ? 'visible' : ''}`}
           >
             <h1 className="header-name">
-              Akseli <span className="d-block d-md-inline" /> Rajahalme <span className="asterisk">*</span>
+              Akseli <span className="d-block d-xl-inline" /> Rajahalme <span className="asterisk">*</span>
             </h1>
 
             <div className="briefcase">
