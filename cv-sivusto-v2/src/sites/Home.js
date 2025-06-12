@@ -90,6 +90,7 @@ function Home() {
             <img src={cssIcon} alt="CSS" />
             <span>CSS</span>
           </div>
+
           <div className="skill-badge">
             <img src={psIcon} alt="Photoshop" />
             <span>Photoshop</span>
