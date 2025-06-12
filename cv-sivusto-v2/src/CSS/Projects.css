@@ -1,0 +1,12 @@
+.video-wrapper iframe {
+  border-radius: 12px;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  background: #1a1a1a;
+}
+
+
+.project-section{
+    margin-top: 15rem;
+}
