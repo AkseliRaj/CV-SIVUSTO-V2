@@ -185,17 +185,7 @@
   .header-section {
     margin-left: 1.2rem; /* Left margin adjustment */
     margin-top: 0rem; /* Removes top margin */
-    margin-bottom: 3.5rem; /* Adjusts bottom margin */
-  }
-}
-
-@media (max-width: 580px) {
-  .skills-section,
-  .contactForm,
-  .header-section {
-    margin-left: 1.2rem; /* Left margin adjustment */
-    margin-top: 0rem; /* Removes top margin */
-    margin-bottom: 3.5rem; /* Adjusts bottom margin */
+    margin-bottom: 5rem; /* Adjusts bottom margin */
   }
 }
 
@@ -204,7 +194,8 @@
   .skills-section,
   .contactForm,
   .header-section {
-    margin-left: 1rem; /* Further left margin adjustment */
+    margin-left: 1rem;
+    margin-bottom: 4rem; /* Further left margin adjustment */
   }
 }
 
@@ -246,5 +237,23 @@
   .skill-badge {
     gap: .5rem; /* Reduced gap */
     padding: .5rem 1rem; /* Adjusted padding */
+  }
+}
+
+@media (max-width: 992px) {
+  .contactForm p {
+    margin-bottom: 4rem !important;
+  }
+}
+
+@media (max-width: 580px) {
+  .contactForm p {
+    margin-bottom: 3rem !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .contactForm p {
+    margin-bottom: 2rem !important;
   }
 }
