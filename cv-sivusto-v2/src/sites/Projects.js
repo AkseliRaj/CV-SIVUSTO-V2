@@ -29,7 +29,7 @@ function Projects() {
               <iframe
                 width="100%"
                 height="600"
-                src="https://www.youtube.com/embed/xvFZjo5PgG0"
+                src="https://www.youtube.com/embed/_HXxbN1pAxE"
                 title="Beltstorm video"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -54,8 +54,8 @@ function Projects() {
               <iframe
                 width="100%"
                 height="600"
-                src="https://www.youtube.com/embed/xvFZjo5PgG0"
-                title="Beltstorm video"
+                src="https://www.youtube.com/embed/_HXxbN1pAxE"
+                title="Collect shoes video"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
@@ -76,12 +76,12 @@ function Projects() {
 
           {/*Cryptex*/}
           <div className="project-section mb-5">
-            <h2 className="header-name mb-3">Collect shoes</h2>
+            <h2 className="header-name mb-3">Cryptex</h2>
             <div className="video-wrapper mb-3">
               <iframe
                 width="100%"
                 height="600"
-                src="https://www.youtube.com/embed/xvFZjo5PgG0"
+                src='https://www.youtube.com/embed/BhV8rjAG1SA'
                 title="Beltstorm video"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
